@@ -1,0 +1,9 @@
+<?php
+
+function doto_filter_preprocess_html(&$variables) {
+	if (user_is_anonymous()){
+		$options = array('weight' => 0);
+		drupal_add_css(drupal_get_path('module', 'doto_filter') . '/css/filter.css', $options);
+	}
+}
+?>

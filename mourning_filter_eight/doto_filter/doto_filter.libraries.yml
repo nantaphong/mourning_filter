@@ -1,0 +1,15 @@
+doto-filter:
+  version: 1.x
+  css:
+    theme:
+      css/filter.css: {}
+
+doto-filter-scripts:
+  version: VERSION
+  js:
+    js/functions.js: {}
+    js/grayscale.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+

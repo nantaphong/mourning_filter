@@ -1,0 +1,6 @@
+name: Dotography Filter module
+description: 'Dotography Filter commemorate'
+type: module
+core: 8.x
+package: Dotography
+hidden: false

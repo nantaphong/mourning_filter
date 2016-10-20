@@ -1,0 +1,11 @@
+<?php
+
+function doto_filter_page_attachments(&$page) {
+	//dpm($page);
+	if (\Drupal::currentUser()->isAnonymous()) {
+  		 $page['#attached']['library'][] = 'doto_filter/doto-filter';
+  		 $page['#attached']['library'][] = 'doto_filter/doto-filter-scripts';
+	}
+}
+
+?>	
